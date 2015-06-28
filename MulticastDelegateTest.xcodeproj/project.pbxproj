@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		2CBF81B51B407BA300AC0E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF81B41B407BA300AC0E68 /* AppDelegate.swift */; };
 		2CBF81B71B407BA300AC0E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF81B61B407BA300AC0E68 /* ViewController.swift */; };
-		2CBF81BA1B407BA300AC0E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF81B81B407BA300AC0E68 /* Main.storyboard */; };
 		2CBF81BC1B407BA300AC0E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF81BB1B407BA300AC0E68 /* Images.xcassets */; };
 		2CBF81BF1B407BA300AC0E68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF81BD1B407BA300AC0E68 /* LaunchScreen.xib */; };
 		2CBF81CB1B407BA400AC0E68 /* MulticastDelegateTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF81CA1B407BA400AC0E68 /* MulticastDelegateTestTests.swift */; };
+		2CBF81DC1B407C8300AC0E68 /* ReceiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF81DB1B407C8300AC0E68 /* ReceiverView.swift */; };
+		2CBF81DE1B407D2000AC0E68 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF81DD1B407D2000AC0E68 /* Model.swift */; };
+		2CBF81E01B4085BA00AC0E68 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF81DF1B4085BA00AC0E68 /* MulticastDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +32,15 @@
 		2CBF81B31B407BA300AC0E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBF81B41B407BA300AC0E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBF81B61B407BA300AC0E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2CBF81B91B407BA300AC0E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CBF81BB1B407BA300AC0E68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2CBF81BE1B407BA300AC0E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2CBF81C41B407BA400AC0E68 /* MulticastDelegateTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MulticastDelegateTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBF81C91B407BA400AC0E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBF81CA1B407BA400AC0E68 /* MulticastDelegateTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegateTestTests.swift; sourceTree = "<group>"; };
+		2CBF81D61B407C2300AC0E68 /* MulticastDelegateTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MulticastDelegateTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		2CBF81DB1B407C8300AC0E68 /* ReceiverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverView.swift; sourceTree = "<group>"; };
+		2CBF81DD1B407D2000AC0E68 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2CBF81DF1B4085BA00AC0E68 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +82,15 @@
 		2CBF81B11B407BA300AC0E68 /* MulticastDelegateTest */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF81DA1B407C2A00AC0E68 /* MuticastDelegate */,
 				2CBF81B41B407BA300AC0E68 /* AppDelegate.swift */,
 				2CBF81B61B407BA300AC0E68 /* ViewController.swift */,
-				2CBF81B81B407BA300AC0E68 /* Main.storyboard */,
+				2CBF81DD1B407D2000AC0E68 /* Model.swift */,
+				2CBF81DB1B407C8300AC0E68 /* ReceiverView.swift */,
 				2CBF81BB1B407BA300AC0E68 /* Images.xcassets */,
 				2CBF81BD1B407BA300AC0E68 /* LaunchScreen.xib */,
 				2CBF81B21B407BA300AC0E68 /* Supporting Files */,
+				2CBF81D61B407C2300AC0E68 /* MulticastDelegateTest-Bridging-Header.h */,
 			);
 			path = MulticastDelegateTest;
 			sourceTree = "<group>";
@@ -110,6 +118,14 @@
 				2CBF81C91B407BA400AC0E68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CBF81DA1B407C2A00AC0E68 /* MuticastDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF81DF1B4085BA00AC0E68 /* MulticastDelegate.swift */,
+			);
+			name = MuticastDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBF81BA1B407BA300AC0E68 /* Main.storyboard in Resources */,
 				2CBF81BF1B407BA300AC0E68 /* LaunchScreen.xib in Resources */,
 				2CBF81BC1B407BA300AC0E68 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBF81DE1B407D2000AC0E68 /* Model.swift in Sources */,
 				2CBF81B71B407BA300AC0E68 /* ViewController.swift in Sources */,
+				2CBF81DC1B407C8300AC0E68 /* ReceiverView.swift in Sources */,
+				2CBF81E01B4085BA00AC0E68 /* MulticastDelegate.swift in Sources */,
 				2CBF81B51B407BA300AC0E68 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2CBF81B81B407BA300AC0E68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CBF81B91B407BA300AC0E68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2CBF81BD1B407BA300AC0E68 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,9 +352,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MulticastDelegateTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MulticastDelegateTest/MulticastDelegateTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +365,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MulticastDelegateTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MulticastDelegateTest/MulticastDelegateTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
