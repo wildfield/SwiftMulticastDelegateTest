@@ -1,8 +1,8 @@
-Swift Multicast Delegate Test Project
+<h1>Swift Multicast Delegate Test Project</h1>
 
 If you want to use class itself, it is MulticastDelegate.swift.
 
-*Usage:*
+<h2>Usage:</h2>
 
 ```swift
 
@@ -30,7 +30,7 @@ func test() {
 
 ```
 
-*Notes:*
+<h2>Notes:</h2>
 
 You need to declare protocols as @obj.
 You are responsible for responds to selector checks.
